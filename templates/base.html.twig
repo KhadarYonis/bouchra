@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome Agence Bouchra Immobilier!{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        {% block stylesheets %}
+	        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+	        <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+	        <link rel="stylesheet" href="{{ asset('css/templatemo_style.css') }}">
+	        <link rel="stylesheet" href="{{ asset('css/templatemo_misc.css') }}">
+	        <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}">
+	        <link rel="stylesheet" href="{{ asset('css/testimonails-slider.css') }}">
+        {% endblock %}
+        
+
+    </head>
+    <body>
+    	<div class="container">
+			<div class="row">
+				<div  class="col-lg-12">
+					{% block body %}{% endblock %}
+				</div>
+			</div>
+		</div>
+
+		{% block javascripts %}
+			<script src="{{ asset('js/vendor/modernizr-2.6.1-respond-1.1.0.min.js') }}"></script>
+			<script src="{{ asset('js/vendor/jquery-1.11.0.min.js') }}"></script>
+	        <script src="{{ asset('js/vendor/jquery.gmap3.min.js') }}"></script>
+	        <script src="{{ asset('js/plugins.js') }}"></script>
+	        <script src="{{ asset('js/main.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
